@@ -1,0 +1,26 @@
+spring:
+  application:
+    name:
+     headline
+  datasource:
+    username:
+      root
+    password:
+      chentao1we
+    url:
+      jdbc:mysql://localhost:3306/sm_db
+mybatis-plus:
+  configuration:
+    log-impl:
+     org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: isDeleted
+      id-type: auto
+      table-prefix: news_
+
+
+jwt:
+  token:
+    tokenExpiration: 120  #WorkingTime,Minute
+    tokenSignKey: headline123456
